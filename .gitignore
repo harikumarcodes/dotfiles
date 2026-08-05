@@ -1,0 +1,21 @@
+# OS files
+.DS_Store
+Thumbs.db
+.directory
+
+# Temporary files & editor backups
+*.swp
+*~
+*.tmp
+*.bak
+*.log
+
+# Secrets
+.env*
+*.key
+*.pem
+
+# Cache & runtime data
+.cache/
+*.pid
+*.socket

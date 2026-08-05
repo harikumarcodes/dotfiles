@@ -1,0 +1,23 @@
+[language-server.emmet-lsp]
+command = "emmet-language-server"
+args = ["--stdio"]
+
+[[language]]
+name = "typescript"
+language-servers = [ "ts-native" ]
+
+[[language]]
+name = "javascript"
+language-servers = [ "ts-native", "emmet-lsp" ]
+
+[[language]]
+name = "jsx"
+language-servers = [ "ts-native", "emmet-lsp" ]
+
+[[language]]
+name = "tsx"
+language-servers = [ "ts-native", "emmet-lsp" ]
+
+[language-server.ts-native]
+command = "pnpm"
+args = ["exec", "tsc", "--lsp", "--stdio"]
