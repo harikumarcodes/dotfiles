@@ -1,0 +1,14 @@
+[preview]
+# Increase max preview dimensions (in pixels)
+# Default is usually lower; 2000-3000 is great for 1440p screens
+max_width = 3000
+max_height = 3000
+image_quality = 85
+
+[tasks]
+# Raise the maximum image dimension allowed for pre-processing.
+# Set this up to [65535, 65535] or [0, 0] to disable bounds checking.
+image_bound = [65535, 65535]
+
+# (Optional) Increase max RAM allocated for image decoding in bytes (e.g., 512MB)
+image_alloc = 536870912
