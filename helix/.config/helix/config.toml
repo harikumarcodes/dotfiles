@@ -28,9 +28,10 @@ skip-levels = 1
 X = ["extend_line_up", "extend_to_line_bounds"]
 A-x = "extend_to_line_bounds"
 
+[keys.normal.space]
 # Launch Yazi file manager anchored to current file path, open chosen file in Helix,
 # and send TTY escape codes (\x1b...) to prevent render artifacts & restore bracketed paste.
-C-y = [
+e = [
   ":sh rm -f /tmp/yazi-helix",
   ":insert-output yazi \"%{buffer_name}\" --chooser-file=/tmp/yazi-helix",
   ":insert-output echo \"\\x1b[?1049h\\x1b[?2004h\" > /dev/tty",
