@@ -24,6 +24,9 @@ setopt HIST_IGNORE_DUPS
 setopt HIST_IGNORE_SPACE
 setopt HIST_VERIFY
 
+# Allow comments in commands
+setopt INTERACTIVE_COMMENTS
+
 # Environment Variables
 export EDITOR="hx"
 export VISUAL="hx"
