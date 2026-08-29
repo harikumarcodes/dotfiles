@@ -58,5 +58,12 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME/bin:$PATH" ;;
 esac
 
+# Aliases
+alias zshrc='hx ~/.zshrc'
+alias zshlocal='hx ~/.zshrc.local'
+
 # Prompt
 eval "$(starship init zsh)"
+
+# Local Config
+[[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
