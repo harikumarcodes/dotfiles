@@ -19,5 +19,5 @@ name = "tsx"
 language-servers = [ "ts-native", "emmet-lsp" ]
 
 [language-server.ts-native]
-command = "pnpm"
-args = ["exec", "tsc", "--lsp", "--stdio"]
+command = "tsc"
+args = ["--lsp", "--stdio"]
