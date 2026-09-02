@@ -61,6 +61,8 @@ esac
 # Aliases
 alias zshrc='hx ~/.zshrc'
 alias zshlocal='hx ~/.zshrc.local'
+alias cddotfiles='cd ~/dotfiles'
+alias cdprojects='cd ~/projects'
 
 # Prompt
 eval "$(starship init zsh)"
