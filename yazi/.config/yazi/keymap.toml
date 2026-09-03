@@ -2,3 +2,18 @@
 on = [ "g", "u" ]
 run = "cd /run/media/$USER/"
 desc = "Go to USB drives"
+
+[[mgr.prepend_keymap]]
+on = [ "g", "p" ]
+run = "cd ~/projects"
+desc = "Go to projects"
+
+[[mgr.prepend_keymap]]
+on = [ "g", "." ]
+run = "cd ~/dotfiles"
+desc = "Go to dotfiles"
+
+[[mgr.prepend_keymap]]
+on = [ "g", "l" ]
+run = "cd ~/.local"
+desc = "Go to .local"
