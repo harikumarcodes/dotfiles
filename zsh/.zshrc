@@ -68,7 +68,10 @@ alias cdprojects='cd ~/projects'
 
 # Proton Drive
 alias pd='proton-drive fs'
-alias pdls='pd list /my-files'
+
+pdls() {
+	pd list "/my-files/$1"
+}
 
 pdup() {
 	pd up "$1" "/my-files"
