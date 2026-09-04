@@ -73,6 +73,10 @@ pdls() {
 	pd list "/my-files/$1"
 }
 
+pdrm() {
+	pd trash "/my-files/$1"
+}
+
 pdup() {
 	pd up "$1" "/my-files"
 }
