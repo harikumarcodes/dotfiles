@@ -58,11 +58,27 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME/bin:$PATH" ;;
 esac
 
-# Aliases
+
+# Shortcuts
+# -------------------------------------------------------------------
 alias zshrc='hx ~/.zshrc'
 alias zshlocal='hx ~/.zshrc.local'
 alias cddotfiles='cd ~/dotfiles'
 alias cdprojects='cd ~/projects'
+
+# Proton Drive
+alias pd='proton-drive fs'
+alias pdls='pd list /my-files'
+
+pdup() {
+	pd up "$1" "/my-files"
+}
+
+pddown() {
+	pd down "/my-files/$1" .
+}
+# -------------------------------------------------------------------
+
 
 # Prompt
 eval "$(starship init zsh)"
