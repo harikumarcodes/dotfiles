@@ -73,6 +73,10 @@ pdls() {
 	pd list "/my-files/$1"
 }
 
+pdmd() {
+	pd create-folder "/my-files/" "$1"
+}
+
 pdrm() {
 	pd trash "/my-files/$1"
 }
